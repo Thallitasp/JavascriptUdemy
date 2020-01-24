@@ -1,0 +1,17 @@
+let a = 123
+
+global.b = 123
+this.c = 456
+this.d = false
+this.e = 'teste'
+
+console.log(a)
+console.log(global.b)
+console.log(this.c) //ou console.log(module.exports.c)
+console.log(module.exports == this)
+console.log(module.exports)
+
+
+//criando uma variavel global (nao se deve fazer)
+abc = 3
+console.log(global.abc)
